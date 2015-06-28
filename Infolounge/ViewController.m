@@ -140,7 +140,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    NSURL *url = [NSURL URLWithString:@"http://runpengliu.com:3000"];
+    NSURL *url = [NSURL URLWithString:@"http://72.29.29.198:3000"];
     NSURLRequest *requestURL = [NSURLRequest requestWithURL:url];
     [self.webView loadRequest:requestURL];
 }
