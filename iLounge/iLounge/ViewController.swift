@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         UIView.setAnimationsEnabled(false)
-        let resultsURL = NSURL (string: "http://runpengliu.com:3000");
+        let resultsURL = NSURL (string: "http://72.29.29.198:3000");
         let requestObj = NSURLRequest(URL: resultsURL!);
         self.webView.loadRequest(requestObj);
         self.webView.scrollView.bounces = false
