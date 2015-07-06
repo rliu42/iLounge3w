@@ -17,30 +17,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qIy-yz-dHr">
+                            <webView opaque="NO" alpha="0.0" contentMode="scaleToFill" mediaPlaybackRequiresUserAction="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qIy-yz-dHr">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                             </webView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aaK-XT-d1t">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="qIy-yz-dHr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="2b1-9Z-6iN"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="qIy-yz-dHr" secondAttribute="bottom" id="Fnu-n7-LKj"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="qIy-yz-dHr" secondAttribute="trailing" constant="-16" id="FzS-gR-2h7"/>
-                            <constraint firstItem="qIy-yz-dHr" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="JgX-uI-W56"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="qIy-yz-dHr" secondAttribute="trailing" constant="-16" id="bq4-Vi-U4y"/>
-                            <constraint firstItem="qIy-yz-dHr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="gV4-bB-drR"/>
-                            <constraint firstItem="qIy-yz-dHr" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="x62-GL-XG3"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="qIy-yz-dHr" secondAttribute="bottom" id="zLi-To-4hK"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="qIy-yz-dHr" secondAttribute="bottom" id="1wu-UP-LXR"/>
+                            <constraint firstItem="qIy-yz-dHr" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="4NV-Fu-uqK"/>
+                            <constraint firstItem="aaK-XT-d1t" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="4Sy-6y-T6o"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="aaK-XT-d1t" secondAttribute="bottom" id="8n3-uY-rh9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qIy-yz-dHr" secondAttribute="trailing" constant="-16" id="KbD-Ht-bhU"/>
+                            <constraint firstItem="qIy-yz-dHr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="nD7-Xp-BYR"/>
+                            <constraint firstItem="aaK-XT-d1t" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="sVb-b4-1HD"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="aaK-XT-d1t" secondAttribute="trailing" constant="-16" id="tl4-fq-XSn"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="imageView" destination="aaK-XT-d1t" id="hZe-CK-0cD"/>
                         <outlet property="webView" destination="qIy-yz-dHr" id="yth-B4-hR7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="211" y="349"/>
         </scene>
     </scenes>
 </document>
